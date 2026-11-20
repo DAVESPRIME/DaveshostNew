@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DavesHost — Get Started</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <img src="assets/davelogo.png" alt="DavesHost">
+        </a>
+
+        <nav class="nav-links">
+            <a href="features.html">Features</a>
+            <a href="how-it-works.html">How it works</a>
+            <a href="login.html" class="login-btn">Log in</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="signup-page">
+
+            <div class="signup-card">
+
+                <div class="badge">
+                 Join DavesHost
+                </div>
+
+                <h1>
+                    Create your <span>account.</span>
+                </h1>
+
+                <p>
+                    Start hosting and sharing your projects with the world.
+                </p>
+
+
+                <form class="signup-form" id="signup-form">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        autocomplete="name" 
+                        required
+
+                    >
+
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+
+                    >
+
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="password-field">
+
+    <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Create a password"
+        autocomplete="new-password"
+        minlength="8"
+        required
+    >
+
+    <button
+        type="button"
+        class="password-toggle"
+        aria-label="Show password"
+        aria-pressed="false"
+        data-password-toggle
+    >
+        <svg class="icon-eye" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+        </svg>
+
+        <svg class="icon-eye-off" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 3l18 18"></path>
+            <path d="M10.6 5.2A10.8 10.8 0 0 1 12 5c6.5 0 10 7 10 7a15 15 0 0 1-4 4.8"></path>
+            <path d="M6.2 6.2C3.5 8 2 12 2 12s3.5 7 10 7a10.5 10.5 0 0 0 4-.8"></path>
+            <path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"></path>
+        </svg>
+    </button>
+
+</div>
+
+<!-- <div class="password-box">
+    <input type="password" id="signup-password" placeholder="Create password">
+
+    <button type="button" class="toggle-password"
+        onclick="document.getElementById('signup-password').type = document.getElementById('signup-password').type === 'password' ? 'text' : 'password'">
+        👁
+    </button>
+</div> -->
+
+
+                    <button type="submit" class="primary-btn">
+                        Create Account →
+                    </button>
+
+                </form>
+                <p id="signup-message"  class="form-me" role="status" aria-live="polite"></p>
+
+
+                <p class="login-text">
+                    Already have an account?
+                    <a href="login.html">Log in</a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-client.js"></script>
+
+    <script src="signup.js"></script>
+    <script src="password-toggle.js"></script>
+</body>
+
+</html>
+    </nav>
+</body>
+</html>

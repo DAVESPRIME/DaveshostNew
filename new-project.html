@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DavesHost — New Project</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="dashboard-navbar">
+
+        <a href="dashboard.html" class="logo">
+            <img src="assets/davelogo.png" alt="DavesHost">
+        </a>
+
+        <div class="dashboard-user">
+            <a href="dashboard.html" class="secondary-btn">
+                ← Back to dashboard
+            </a>
+        </div>
+
+    </header>
+
+
+    <main class="new-project-page">
+
+        <!-- PAGE HEADING -->
+        <div class="new-project-heading">
+
+            <span class="dashboard-label">
+                PROJECT DEPLOYMENT
+            </span>
+
+            <h1>
+                Bring your <span>project to life.</span>
+            </h1>
+
+            <p>
+                Upload your project files and prepare them
+                to go live on the web.
+            </p>
+
+        </div>
+
+
+        <!-- PROJECT FORM -->
+        <section class="project-form-card">
+
+            <form id="project-form">
+
+                <!-- PROJECT NAME -->
+                <div class="project-field">
+
+                    <label for="project-name">
+                        Project Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="project-name"
+                        name="project-name"
+                        placeholder="e.g. My Portfolio"
+                        maxlength="60"
+                        required
+                    >
+
+                    <small>
+                        Choose a name that describes your project.
+                    </small>
+
+                </div>
+
+
+                <!-- PROJECT DESCRIPTION -->
+                <div class="project-field">
+
+                    <label for="project-description">
+                        Description <span>(Optional)</span>
+                    </label>
+
+                    <textarea
+                        id="project-description"
+                        name="project-description"
+                        placeholder="What does your project do?"
+                        rows="3"
+                        maxlength="250"
+                    ></textarea>
+
+                </div>
+
+
+                <!-- PROJECT FILE -->
+                <div class="project-field">
+
+                    <label for="project-file">
+                        Project Files
+                    </label>
+
+                    <div class="upload-area">
+
+                        <div class="upload-icon">
+                            ↑
+                        </div>
+
+                        <h3>
+                            Upload your project ZIP
+                        </h3>
+
+                        <p>
+                            Select a ZIP file containing your
+                            HTML, CSS, JavaScript, and assets.
+                        </p>
+
+                        <div class="upload-choices">
+
+    <!-- ZIP UPLOAD -->
+    <label for="project-file" class="upload-btn">
+        📦 Choose ZIP File
+    </label>
+
+    <input
+        type="file"
+        id="project-file"
+        accept=".zip,application/zip"
+    >
+
+
+    <!-- FOLDER UPLOAD -->
+    <label for="project-folder" class="upload-btn">
+        📁 Choose Project Folder
+    </label>
+
+    <input
+        type="file"
+        id="project-folder"
+        webkitdirectory
+        directory
+        multiple
+    >
+
+</div>
+
+<p id="file-name" class="file-name">
+    No project selected
+</p>
+
+                        <p id="file-name" class="file-name">
+                            No file selected
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DEPLOYMENT INFORMATION -->
+                <div class="deployment-notice">
+
+                    <span class="notice-icon">i</span>
+
+                    <p>
+                        After uploading, your project will need
+                        to be processed and deployed before it
+                        can receive a public URL.
+                    </p>
+
+                </div>
+
+
+                <!-- BUTTONS -->
+                <div class="project-actions">
+
+                    <a href="dashboard.html" class="secondary-btn">
+                        Cancel
+                    </a>
+
+                    <button type="submit" class="primary-btn">
+                        Continue →
+                    </button>
+
+                </div>
+
+                <p
+                    id="project-message"
+                    class="form-message"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+        </section>
+
+    </main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="supabase-client.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+<script src="new-project.js"></script>
+</body>
+
+</html>3
